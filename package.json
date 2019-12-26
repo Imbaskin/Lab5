@@ -11,7 +11,10 @@
     "author": "Nataliia Byshovets",
     "license": "ISC",
     "devDependencies": {
-        "eslint": "^6.5.1",
+        "eslint": "^6.8.0",
         "prettier": "^1.18.2"
+    },
+    "dependencies": {
+        "express": "^4.17.1"
     }
 }
