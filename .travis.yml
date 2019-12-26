@@ -6,6 +6,6 @@ script:
 notifications:
   email: false
   deploy:
-  provider: heroku
-  api_key:
-    secure: "76f6fdae-8a89-4565-8f3b-491acc4eca4c"
+  provider: heroku:git
+  api_key: <76f6fdae-8a89-4565-8f3b-491acc4eca4c>
+  edge: true # opt in to dpl v2
