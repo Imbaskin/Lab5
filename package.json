@@ -8,6 +8,17 @@
         "start": "node lab5.js",
         "lint": "eslint ."
     },
+    "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+    "lint-staged": {
+        "*.(js|jsx)": [
+            "npm run lint:write",
+            "git add"
+        ]
+    },
     "author": "Kostya Samoylenko",
     "license": "ISC",
     "devDependencies": {
@@ -15,6 +26,8 @@
         "prettier": "^1.18.2"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "husky": "^3.1.0",
+        "lint-staged": "^9.5.0"
     }
 }
